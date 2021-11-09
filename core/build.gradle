@@ -1,0 +1,114 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "com.abubakar.features.EspressoTestRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
+        freeCompilerArgs += "-Xopt-in=org.mylibrary.OptInAnnotation"
+
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+}
+
+dependencies {
+
+    implementation project(path: ':lib:base')
+    implementation project(path: ':lib:networking')
+    implementation project(path: ':lib:analytics')
+    implementation project(path: ':lib:experiments')
+
+
+    implementation "androidx.core:core-ktx:$versions.androidxCore"
+    implementation "androidx.appcompat:appcompat:$versions.appcompat"
+    implementation "com.google.android.material:material:$versions.material"
+
+    implementation "androidx.constraintlayout:constraintlayout:$versions.constraintLayout"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$versions.nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$versions.nav_version"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycle_version"
+
+    implementation "androidx.paging:paging-runtime-ktx:$versions.pagination"
+
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
+
+    implementation "com.squareup.retrofit2:converter-moshi:$versions.moshiConverter"
+
+    implementation "com.squareup.moshi:moshi-kotlin:$versions.moshi"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$versions.moshi"
+
+    implementation "com.serjltt.moshi:moshi-lazy-adapters:$versions.moshiLazyAdapter"
+
+
+    implementation "dev.zacsweers.moshix:moshi-sealed-reflect:$versions.moshiSealed"
+    implementation "dev.zacsweers.moshix:moshi-adapters:$versions.moshiAdapters"
+
+    implementation "com.google.dagger:dagger:$versions.dagger"
+    implementation "com.google.dagger:dagger-android:$versions.dagger"
+    implementation "com.google.dagger:dagger-android-support:$versions.dagger"
+    kapt "com.google.dagger:dagger-compiler:$versions.dagger"
+    kapt "com.google.dagger:dagger-android-processor:$versions.dagger"
+
+
+    implementation "com.github.bumptech.glide:glide:$versions.glide"
+    kapt "com.github.bumptech.glide:compiler:$versions.glide"
+
+    compileOnly "androidx.room:room-runtime:$versions.room"
+
+    testImplementation "junit:junit:$versions.jUnit"
+
+    testImplementation "io.mockk:mockk:$versions.mockK"
+
+    testImplementation "com.google.truth:truth:$versions.truth"
+
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutinesTest"
+
+    testImplementation "org.mockito.kotlin:mockito-kotlin:$versions.mockitio"
+    testImplementation "org.mockito:mockito-inline:$versions.mockitio"
+
+    testImplementation "android.arch.core:core-testing:$versions.testingCore"
+
+    androidTestImplementation "androidx.test.ext:junit:$versions.jUnitTestExt"
+
+    androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espresso"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$versions.espresso"
+    kaptAndroidTest "com.google.dagger:dagger-compiler:$versions.dagger"
+
+}

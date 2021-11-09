@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudio/Neugelb/core/src/main/res/layout/fragment_movie_detail.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/Neugelb/core/src/main/res/layout/fragment_search_movie.xml" value="0.20104166666666667" />
+        <entry key="..\:/AndroidStudio/Neugelb/core/src/main/res/layout/list_item_cast.xml" value="0.15833333333333333" />
+        <entry key="..\:/AndroidStudio/bakar/Latest-Neugelb/Neugelb/core/src/main/res/layout/fragment_movie_detail.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudio/bakar/Latest-Neugelb/Neugelb/core/src/main/res/layout/fragment_search_movie.xml" value="0.1" />
+        <entry key="..\:/AndroidStudio/bakar/Latest-Neugelb/Neugelb/core/src/main/res/layout/list_item_cast.xml" value="0.22418478260869565" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/app/src/main/res/layout/activity_main.xml" value="0.15729166666666666" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/drawable/ic_add_24.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/drawable/ic_image_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/drawable/ic_profile_circle_24.xml" value="0.14635416666666667" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/drawable/ic_search_24.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/drawable/ic_search_white.xml" value="0.14635416666666667" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/drawable/ic_share_24.xml" value="0.2703125" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout-land/detail_movie_poster.xml" value="0.1318342151675485" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout-land/movie_poster.xml" value="0.21516754850088182" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/activity_main.xml" value="0.17300724637681159" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/detail_experiment_ui.xml" value="0.264" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/detail_movie_poster.xml" value="0.14583333333333334" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/fragment_movie_detail.xml" value="0.2" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/fragment_movies.xml" value="0.15729166666666666" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/fragment_search_movie.xml" value="0.2427536231884058" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/item_manufacturer.xml" value="0.15729166666666666" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/list_item_cast.xml" value="0.2427536231884058" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/list_item_tags.xml" value="0.2427536231884058" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/list_latest_movies.xml" value="0.264" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/loading_error_layout.xml" value="0.15729166666666666" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/movie_detail.xml" value="0.2427536231884058" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/movie_detail_awards.xml" value="0.2427536231884058" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/movie_detail_cast.xml" value="0.24728260869565216" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/movie_detail_general.xml" value="0.24728260869565216" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/movie_detail_revenue.xml" value="0.24728260869565216" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/movie_general_info.xml" value="0.24728260869565216" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/movie_poster.xml" value="0.2427536231884058" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/promotion_movie.xml" value="1.2" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/layout/toolbar.xml" value="0.23822463768115942" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/core/src/main/res/menu/search_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/features/src/main/res/layout/item_manufacturer.xml" value="0.1793478260869565" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/features/src/main/res/layout/loading_error_layout.xml" value="0.1793478260869565" />
+        <entry key="..\:/AndroidStudio/bakar/Neugelb/lib/networking/src/main/res/xml/network_security_config.xml" value="0.10520833333333333" />
+        <entry key="..\:/AndroidStudio/practices/IMDB/core/src/main/res/layout/activity_main.xml" value="0.17980072463768115" />
+        <entry key="..\:/AndroidStudio/practices/IMDB/core/src/main/res/layout/list_item_cast.xml" value="0.1" />
+        <entry key="..\:/Users/junto/Downloads/Neugelb/core/src/main/res/layout/fragment_search_movie.xml" value="0.1" />
+        <entry key="..\:/Users/junto/Downloads/Neugelb/core/src/main/res/layout/promotion_movie.xml" value="0.2882298424467099" />
+        <entry key="core/src/main/res/layout/detail_experiment_ui.xml" value="0.13269927536231885" />
+        <entry key="core/src/main/res/layout/fragment_movie_detail.xml" value="0.1038500506585613" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

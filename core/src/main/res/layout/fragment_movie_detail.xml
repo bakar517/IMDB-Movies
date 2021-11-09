@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/lblError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:text="@string/something_went_wrong_message"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/movieDetailGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="backdrop, movieDetail" />
+
+        <include
+            android:id="@+id/backdrop"
+            layout="@layout/movie_poster" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/movieDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:padding="@dimen/spacing_normal"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/backdrop">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lblTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceHeadline4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="@tools:sample/lorem" />
+
+
+                <TextView
+                    android:id="@+id/lblReleaseYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lblTitle"
+                    tools:text="@tools:sample/lorem" />
+
+                <TextView
+                    android:id="@+id/lblAdult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    app:layout_constraintStart_toEndOf="@+id/lblReleaseYear"
+                    app:layout_constraintTop_toTopOf="@+id/lblReleaseYear"
+                    tools:text="@tools:sample/lorem" />
+
+                <TextView
+                    android:id="@+id/lblDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    app:layout_constraintStart_toEndOf="@+id/lblAdult"
+                    app:layout_constraintTop_toTopOf="@+id/lblReleaseYear"
+                    tools:text="@tools:sample/lorem" />
+
+                <Button
+                    android:id="@+id/btnPlay"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/play"
+                    app:layout_constraintTop_toBottomOf="@+id/lblReleaseYear" />
+
+                <TextView
+                    android:id="@+id/lblOverview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    app:layout_constraintStart_toStartOf="@+id/btnPlay"
+                    app:layout_constraintTop_toBottomOf="@+id/btnPlay"
+                    tools:text="@tools:sample/lorem/random" />
+
+                <HorizontalScrollView
+                    android:id="@+id/movieGenres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    app:layout_constraintStart_toStartOf="@+id/lblOverview"
+                    app:layout_constraintTop_toBottomOf="@+id/lblOverview">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/genresGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:singleLine="true" />
+                </HorizontalScrollView>
+
+
+                <include
+                    android:id="@+id/detailsActionLayout"
+                    layout="@layout/details_action_ui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    app:layout_constraintStart_toStartOf="@+id/movieGenres"
+                    app:layout_constraintTop_toBottomOf="@+id/movieGenres" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/castGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="lblCast, castList"
+                    />
+                <TextView
+                    android:id="@+id/lblCast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_normal"
+                    android:text="@string/cast"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    app:layout_constraintStart_toStartOf="@+id/detailsActionLayout"
+                    app:layout_constraintTop_toBottomOf="@+id/detailsActionLayout" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/castList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:nestedScrollingEnabled="false"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintStart_toStartOf="@+id/lblCast"
+                    app:layout_constraintTop_toBottomOf="@+id/lblCast"
+                    app:spanCount="3"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/list_item_cast" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

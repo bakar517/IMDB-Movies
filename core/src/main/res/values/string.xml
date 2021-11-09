@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="something_went_wrong_message">Something went wrong, try again</string>
+
+    <string name="add_to_watchlist">Add to Watchlist</string>
+
+    <string name="cast">Cast</string>
+    <string name="top_cast">Top Cast</string>
+    <string name="director">Director</string>
+    <string name="writers">Writers</string>
+
+    <string name="play">Play</string>
+    <string name="my_list">My List</string>
+    <string name="share">Share</string>
+
+    <string name="search_movie">Search Movie</string>
+
+</resources>

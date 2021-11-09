@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imdb_movies_nav_graph"
+    app:startDestination="@id/moviesFragment">
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.abubakar.features.movies.discovery.DiscoveryFragment"
+        android:label="Movies Fragment"
+        tools:layout="@layout/fragment_discovery">
+
+        <action
+            android:id="@+id/action_go_to_movie_detail_screen"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_go_to_search_movie_screen"
+            app:destination="@id/searchMovieFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/movieDetailFragment"
+        android:name="com.abubakar.features.details.MovieDetailsFragment"
+        android:label="Movie Detail Fragment"
+        tools:layout="@layout/fragment_movie_detail">
+
+        <argument
+            android:name="movie_detail"
+            app:argType="com.abubakar.features.details.MovieDetailsArgs"
+            app:nullable="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchMovieFragment"
+        android:name="com.abubakar.features.movies.search.SearchMovieFragment"
+        android:label="Search Movie Fragment"
+        tools:layout="@layout/fragment_search_movie">
+
+        <action
+            android:id="@+id/action_go_to_movie_detail_screen"
+            app:destination="@id/movieDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+
+    </fragment>
+
+
+</navigation>
