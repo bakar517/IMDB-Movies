@@ -4,9 +4,9 @@ The project is based on MVVM and clean code architecture along with unit and UI 
 
 **Navigation component**
 
-**Kotlin coroutines **
+**Kotlin coroutines**
 
-**Dagger2 **
+**Dagger2**
 
 **Pagination** 
 
@@ -16,9 +16,9 @@ The project is based on MVVM and clean code architecture along with unit and UI 
 
 **Junit**
 
-**Mockitio **
+**Mockitio**
 
-**Google truth ** 
+**Google truth** 
 
 **Espresso**
 
@@ -27,11 +27,17 @@ You need Android Studio which supports Gradle plugin 7.0.2+ and define your IMDB
 ![api-ley](https://user-images.githubusercontent.com/44984924/140932575-d0ca4a39-8995-4edd-9b06-997537a75af2.png)
 
 
-Features
+## Features
 This project has the following features
 
-Latest Movies images: Show a list of the latest movies with infinite scrolling.
+**Latest Movies images:** 
 
-Search screen: Show a list of movies related to keywords that are entered by the user in the input box.
+Show a list of the latest movies with infinite scrolling.
 
-Detail Screen: Show the detail of the movie such as movie backdrop, title, year of release, duration, overview and cast.
+**Search screen:** 
+
+Show a list of movies related to keywords that are entered by the user in the input box.
+
+**Detail Screen:** 
+
+Show the detail of the movie such as movie backdrop, title, year of release, duration, overview and cast.
