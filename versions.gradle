@@ -16,8 +16,8 @@ def versions = [:]
     versions.moshiLazyAdapter = '2.2'
     versions.dagger = '2.40'
     versions.glide = '4.12.0'
-    versions.room = '2.3.0'
-    versions.photoView = '2.0.0'
+    versions.firebaseBom = '29.0.0'
+
     versions.ok_http_version = "4.9.0"
     versions.jUnit = '4.13.0'
     versions.mockK = '1.12.0'
