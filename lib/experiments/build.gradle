@@ -35,6 +35,9 @@ android {
 dependencies {
     implementation project(":lib:base")
 
+    implementation "com.google.firebase:firebase-installations-ktx:$versions.firebaseInstallations"
+
     implementation "com.google.dagger:dagger:$versions.dagger"
+    implementation "com.google.firebase:firebase-config-ktx:$versions.firebaseConfig"
     kapt "com.google.dagger:dagger-compiler:$versions.dagger"
 }
