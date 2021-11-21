@@ -37,9 +37,9 @@ android {
         viewBinding true
     }
 
-    lintOptions {
-        warningsAsErrors true
-    }
+//    lintOptions {
+//        warningsAsErrors true
+//    }
 }
 
 dependencies {
