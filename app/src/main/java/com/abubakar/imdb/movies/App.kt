@@ -6,11 +6,13 @@ import com.abubakar.base.BuildInfo
 import com.abubakar.base.Environment
 import com.abubakar.base.Keys
 import com.abubakar.features.di.AppInjector
+import com.google.firebase.FirebaseApp
 
 class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        FirebaseApp.initializeApp(applicationContext)
 
         AppInjector.init(applicationContext, getAppConfig())
     }

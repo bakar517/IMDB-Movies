@@ -90,8 +90,6 @@ dependencies {
     implementation "com.github.bumptech.glide:glide:$versions.glide"
     kapt "com.github.bumptech.glide:compiler:$versions.glide"
 
-    compileOnly "androidx.room:room-runtime:$versions.room"
-
     testImplementation "junit:junit:$versions.jUnit"
 
     testImplementation "io.mockk:mockk:$versions.mockK"

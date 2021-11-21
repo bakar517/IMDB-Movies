@@ -8,6 +8,7 @@ import com.abubakar.base.di.BaseModule
 import com.abubakar.base.di.DaggerBaseComponent
 import com.abubakar.features.di.AppInjector
 import com.abubakar.features.di.DaggerTestComponent
+import com.google.firebase.FirebaseApp
 
 
 class EspressoTestRunner : AndroidJUnitRunner() {
@@ -22,6 +23,7 @@ class TestApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
+        FirebaseApp.initializeApp(applicationContext)
 
         AppInjector.init(
             DaggerTestComponent.builder().baseComponent(

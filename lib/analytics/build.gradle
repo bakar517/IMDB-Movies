@@ -2,6 +2,7 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -35,6 +36,11 @@ android {
 dependencies {
 
     implementation project(":lib:base")
+
+    implementation "androidx.core:core-ktx:$versions.androidxCore"
+
+    implementation platform("com.google.firebase:firebase-bom:$versions.firebaseBom")
+    api 'com.google.firebase:firebase-analytics-ktx'
 
     implementation "com.google.dagger:dagger:$versions.dagger"
     kapt "com.google.dagger:dagger-compiler:$versions.dagger"

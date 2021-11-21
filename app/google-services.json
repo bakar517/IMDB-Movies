@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "441672021298",
+    "project_id": "imdb-movies-db0ea",
+    "storage_bucket": "imdb-movies-db0ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441672021298:android:12db331f8f59b28ed0932b",
+        "android_client_info": {
+          "package_name": "com.abubakar.imdbmovies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441672021298-akstt0rq2vo5h3nr4nk452andqus3191.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXdcM_-TfEMNx1lbmphyY1VQ7LM5cEID0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441672021298-akstt0rq2vo5h3nr4nk452andqus3191.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
