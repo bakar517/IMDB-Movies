@@ -19,7 +19,7 @@ import javax.inject.Singleton
         MockServiceModule::class,
         InternalModule::class,
         FakeExperimentModule::class,
-        AnalyticsModule::class,
+        FakeAnalyticsModule::class,
     ], dependencies = [BaseComponent::class]
 )
 
